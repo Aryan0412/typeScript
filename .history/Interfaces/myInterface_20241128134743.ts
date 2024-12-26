@@ -1,0 +1,16 @@
+interface user {
+    email : string,
+    userId : number
+}
+
+interface userDetails extends user {
+    name : string
+}
+
+function sayHiToUser (user : user) : string{
+    return `Hello ${user.userId}`;
+}
+
+console.log(sayHiToUser({email : 'aryan@gmail', userId : 12016556}));
+
+export {};
